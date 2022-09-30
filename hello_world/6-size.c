@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - Main function
+ * main - Entry point
  *
- * Return: Exit status code
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 printf("Size of char: %d byte\n", sizeof(char));
