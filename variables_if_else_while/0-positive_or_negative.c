@@ -13,9 +13,9 @@ int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (n > 0)
+ if (n > 0));
 {
-printf("$n is positive");
+printf("98 is positive ");
 }
 else if (n == 0)
 {
@@ -23,7 +23,7 @@ printf("0 is zero ");
 }
 else if (n < 0)
 {
-printf("-95 is negative ");
+printf("-98 is negative ");
 }
 return (0);
 }
