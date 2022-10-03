@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-int n; LastDigit
+int n ; LastDigit
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
@@ -19,7 +19,7 @@ scanf("%d", &n);
 }
 else if (n == 0)
 {
-printf("%d and is 0\n", n;)
+printf("%d and is 0\n", n);
 scanf("%d", &n);
 }
 else if (n < 6)
