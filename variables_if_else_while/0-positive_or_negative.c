@@ -3,20 +3,17 @@
 #include <time.h>
 
 /*
- *main - Main function
- *
- * Return: Exit status code
- */
-
-/*
- *betty-style.pl betty-doc.pl
+*main - Main function
+*
+* Return: Exit status code
 */
-int main (void)
-{
-  int n;
 
-  srand(time(0));
-  n =rand () -RAND_MAX / 2;
-  /* your code goes there */
-  return(0);
+int main(void)
+{
+int n;
+
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+/* your code goes there */
+return (0);
 }
