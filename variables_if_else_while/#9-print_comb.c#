@@ -6,10 +6,16 @@
  */
 int main(void)
 {
-char alphabet;
-for (alphabet = 'z' ; alphabet <= 'a' ; alphabet++)
+int x = 0;
+while (x < 10)
 {
-putchar(alphabet);
+putchar(x + '0');
+if (x < 9)
+{
+putchar(',');
+putchar(' ');
+}
+x++;
 }
 putchar('\n');
 return (0);
