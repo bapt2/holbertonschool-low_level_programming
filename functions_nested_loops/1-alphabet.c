@@ -4,13 +4,12 @@
  *
  *Return: always 0
  */
-print_alphabet(void)
+void print_alphabet(void)
 {
-char alph;
-for (alph = 'a' ; alph <= 'z' ; alph++)
+char x;
+for (x = 'a'; x <= 'z'; x++)
 {
-putchar(alph);
+_putchar(x);
 }
-putchar('\n');
-return (0);
+_putchar('\n');
 }
