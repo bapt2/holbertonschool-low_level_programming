@@ -6,14 +6,12 @@
  */
 int main(void)
 {
-char _putchar;
-putchar("_");
-putchar("p");
-putchar("u");
-putchar("t");
-putchar("c");
-putchar("h");
-putchar("a");
-putchar("r");
-putchar("\n");
+char letras[8] = "_putchar";
+int num;
+ for (num = 0; num < 8; num++)
+{
+_putchar(letras[num]);
+}
+_putchar('\n');
+return (0);
 }
