@@ -1,14 +1,13 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints numbers from 0 to 14 ten times
+ * Description: prints numbers 
  * Return: Alaways 0 (Success)
  */
-
 int main(void)
 {
 int x;
-for (x = 1; x <= 100 ; num++)
+for (x = 1; x <= 100 ; x++)
 {
 if (x % 3 == 0 && x % 5 == 0)
 printf("FizzBuzz");
