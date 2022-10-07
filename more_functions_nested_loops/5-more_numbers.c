@@ -10,7 +10,7 @@ int x;
 int n;
 for (x = 0; x < 10; x++)
 {
-for (n = '0' ; n < "14" ; n++)
+for (n = 0 ; n < 14 ; n++)
 {
 if (n > 9)
 {
