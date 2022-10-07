@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *more numbers - function that print numbers 10 times the numbers
+ *more_numbers - function that print numbers 10 times the numbers
  *
  *Return: always 0
  */
