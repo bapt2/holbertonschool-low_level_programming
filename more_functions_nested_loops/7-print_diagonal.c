@@ -10,7 +10,7 @@ int a = 0;
 int b = 0;
 if (n > 0)
 {
-while (a > n)
+while (a < n)
 {
 while (b < a)
 {
