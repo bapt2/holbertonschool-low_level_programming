@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints numbers 
+ * Description: prints numbers
  * Return: Alaways 0 (Success)
  */
 int main(void)
@@ -17,7 +17,7 @@ else if (x % 3 == 0)
 printf("Fizz");
 else
 printf("%d", x);
-if (x !=100)
+if (x != 100)
 printf(" ");
 }
 return (0 * putchar(10));
