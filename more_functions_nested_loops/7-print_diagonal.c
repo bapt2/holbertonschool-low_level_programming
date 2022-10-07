@@ -17,11 +17,11 @@ while (b < a)
 _putchar(' ');
 b++;
 }
-}
 a++;
 b = 0;
 _putchar('\\');
 _putchar('\n');
+}
 }
 else
 {
