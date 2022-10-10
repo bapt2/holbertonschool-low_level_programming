@@ -11,7 +11,7 @@ int t;
 char d;
 while (s[c] != '\0')
 c++;
-for (t = c - 1; t >= / 2; t--)
+for (t = c - 1; t >= c / 2; t--)
 {
 d = s[t];
 s[t] = s[c - 1 - t];
