@@ -10,9 +10,9 @@ int c = 0;
 int t;
 while (s[c] != '\0')
 c++;
-for (i = c - 1; i >= 0; i--)
+for (t = c - 1; t >= 0; t--)
 {
-_putchar(s[i]=;
+_putchar(s[t]);
 }
 _putchar('\n');
 }
