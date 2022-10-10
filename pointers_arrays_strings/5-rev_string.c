@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_rev - function that prints a string in reverse
+ *rev_string - function that reverse a string
  *@s: character
  *Return: Always 0
  */
@@ -11,10 +11,10 @@ int t;
 char d;
 while (s[c] != '\0')
 c++;
-for (t = c - 1; t >= 0; t--)
+for (t = c - 1; t >= / 2; t--)
 {
 d = s[t];
-s[t] = s[c -1 -t];
- s[c - t - 1] = d;
+s[t] = s[c - 1 - t];
+s[c - t - 1] = d;
 }
 }
