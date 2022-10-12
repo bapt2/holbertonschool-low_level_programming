@@ -9,11 +9,13 @@ void puts_half(char *str)
 	int c = 0;
 	int t;
 	while (*(str + c))
+	{
 		 c++;
+	}
 	t = c / 2;
-		if (c % 2)
-			t += 1;
-		while (t < c)
+	if (c % 2)
+		t += 1;
+	while (t < c)
 	{
 		_putchar(*(str + t));
 		t++;
