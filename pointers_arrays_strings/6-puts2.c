@@ -8,6 +8,7 @@ void puts2(char *str)
 {
 	int c = 0;
 	int t;
+
 	while (str[c] != '\0')
 	{
 		c++;
