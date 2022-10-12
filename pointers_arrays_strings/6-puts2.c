@@ -4,7 +4,6 @@
  *@str: character
  *Return: Always 0
  */
-
 void puts2(char *str)
 {
 	int c = 0;
