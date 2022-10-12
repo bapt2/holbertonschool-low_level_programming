@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strcpy -  copies the string pointed to by src, including the terminating null 
+ *_strcpy -  copies the string pointed to by src, including the terminating
  *@dest: variable destination
  *@src:variable copy
  *Return: dest
