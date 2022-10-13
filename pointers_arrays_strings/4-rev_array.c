@@ -5,7 +5,7 @@
  *@n:integer
  *Return: 0
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i, t, x
 		t = 0;
