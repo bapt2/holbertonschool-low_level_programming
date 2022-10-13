@@ -3,22 +3,22 @@
  *_strcat - fonction that concatenates two strings
  *@dest: second chain
  *@src: first chain
- *Return: always 0
+ *Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int x = 0;
-	int i = 0;
+	int len_dest = 0, len_src = 0;
 
-	while (dest[x] != '\0')
+	while (dest[len_dest] != '\0')
 	{
-		x++;
+		len_dest++;
 	}
-	while(src[i] != '\0')
+
+	while (src[len_src] != '\0')
 	{
-		dest[x] = src[i];
-		x++;
-		i++;
+		dest[len_dest] = src[len_src];
+		len_dest++;
+		len_src++;
 	}
 	return (dest);
 }
