@@ -7,17 +7,10 @@
  */
 int _strmcp(char *s1, char *s2)
 {
-	int i, c = 0;
-
-	if (*s1 == *s2)
+	while (*s1 && *s2 && *s1 == *s2)
 	{
-	for(i = 0; s2[i]; i++)
-		{
-			if (s1[i] == s2[i])
-				c++;
+		s1++;
+		s2++;
 		}
-	if (c == i)
-		return (1);
-	}
-	return (0);
+	return (*s1 - *s2);
 }
