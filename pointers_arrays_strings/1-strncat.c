@@ -8,8 +8,9 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0 , t = 0;
-	while (dest [i] != '\0')
+	int i = 0, t = 0;
+
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
