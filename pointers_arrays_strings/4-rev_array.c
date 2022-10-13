@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  *reverse_array - function that reverse the content of an array of integer
  *@a:integer
