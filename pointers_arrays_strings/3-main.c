@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
     char s1[] = "Hello";
     char s2[] = "World!";
