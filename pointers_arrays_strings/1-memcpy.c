@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_memset -function that fills memory whith a constant byte
+ *_memcpy -function that copies the memory area
  *@dest: destination of the copy
  *@src: source of the copy
  *@n: unsigned int
