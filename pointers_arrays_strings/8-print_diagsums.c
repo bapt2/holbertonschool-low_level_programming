@@ -17,5 +17,5 @@ void print_diagsums(int *a, int size)
 		rx += a[(size + 1) * i];
 		ry += a[(size - 1) * (i + 1)];
 	}
-	printf("%d, %d\n", rx, ry);
+	_putchar("%d, %d\n", rx, ry);
 }
