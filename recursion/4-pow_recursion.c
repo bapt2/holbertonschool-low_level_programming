@@ -13,9 +13,3 @@ int _pow_recursion(int x, int y)
 		return (0);
 	return x * power(x, n - 1);
 }
-int main()
-{
-	int x = 2;
-	int y = 3;
-	_putchar("%d\n", power(x, n));
-}
