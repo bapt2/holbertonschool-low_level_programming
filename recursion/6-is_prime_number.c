@@ -2,7 +2,7 @@
 /**
  *_prime - function that return if a number is prime
  *@x: parameter
- *@n: parameter
+ *@y: parameter
  *
  *Return: int
  */
