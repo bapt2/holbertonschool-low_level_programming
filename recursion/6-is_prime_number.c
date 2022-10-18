@@ -7,15 +7,16 @@
  */
 int _prime(int x, int y)
 {
-	if (x <= 1 || n % y == 0)
+	if (x <= 1 || y % y == 0)
 		return (0);
 	else if (n == y)
 		return (1);
 	else if (n > y)
 	{
-		_prime(n, y + 1)
+		_prime(n, y + 1);
 	}
 	return (1);
+}
 /**
  *is_prime_number- function that return 1 if the input int is prime number
  *@n:int
