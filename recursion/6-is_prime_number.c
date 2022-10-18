@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_prime - function that return if a number is prime
- *@x:parameter
- *@n:parameter
+ *@x: parameter
+ *@n: parameter
  *Return: int
  */
 int _prime(int x, int y)
@@ -19,7 +19,7 @@ int _prime(int x, int y)
 }
 /**
  *is_prime_number- function that return 1 if the input int is prime number
- *@n:int
+ *@n: parameter of the function
  *Return:1 if the input the int is a prime number otherwhise return 0
  */
 
