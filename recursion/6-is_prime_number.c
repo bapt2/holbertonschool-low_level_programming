@@ -7,11 +7,11 @@
  */
 int _prime(int x, int y)
 {
-	if (x <= 1 || y % y == 0)
+	if (x <= 1 || x % y == 0)
 		return (0);
-	else if (n == y)
+	else if (x == y)
 		return (1);
-	else if (n > y)
+	else if (x > y)
 	{
 		_prime(n, y + 1);
 	}
