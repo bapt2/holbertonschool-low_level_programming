@@ -6,6 +6,6 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (_sqrt_recursion(n, 1/2) != _sqrt_recursion(n, 1/2))
+	if (_sqrt_recursion(n, 1/2) != (n, 1/2))
 		return (-1);
 }
