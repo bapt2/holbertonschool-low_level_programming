@@ -1,3 +1,4 @@
 #!/bin/bash
-ar -cvq liball.a
-gcc .c = .o
+gcc -c *.c
+ar rc liball.a *.o
+ranlib liball.a
