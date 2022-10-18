@@ -13,7 +13,7 @@ int _prime(int x, int y)
 		return (1);
 	else if (x > y)
 	{
-		_prime(n, y + 1);
+		_prime(x, y + 1);
 	}
 	return (1);
 }
