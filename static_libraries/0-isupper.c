@@ -1,3 +1,3 @@
-int _issuper(char c)
+int _isupper(char c)
 {
 }
