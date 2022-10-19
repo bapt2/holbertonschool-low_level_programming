@@ -1,3 +1,1 @@
-{
-	int _issuper(char c)
-		}
+int _issuper(char c)
