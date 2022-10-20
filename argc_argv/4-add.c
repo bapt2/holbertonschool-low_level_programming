@@ -2,9 +2,9 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, sum = 0;
 
-	printf("%d\n", argc);
+	if (argc != 3
 	for (i = 0; i < argc - 1; i++)
 	{
 		printf("%s",argv[i]);
