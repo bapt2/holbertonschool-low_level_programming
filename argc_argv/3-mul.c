@@ -10,13 +10,13 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if(argc != 3)
+	if (argc != 3)
 	{
 		printf("Error");
-	exit (1);
+	exit(1);
 	}
 	for (i = 1; i < argc; i++)
 		sum = sum * atoi(argv[i]);
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
