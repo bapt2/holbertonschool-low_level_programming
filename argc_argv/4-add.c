@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 */
 int _isdigit(int c)
 {
-	if ((c >= 33 && c <= 47) && (c >= 58 && c <= 124))
+	if (c != (c >= 33 && c <= 47) && (c >= 58 && c <= 124))
 	{
 		printf("Error\n");
 		return (1);
