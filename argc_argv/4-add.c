@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("0\n");
-		exit(1);
+		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 		sum = sum + atoi(argv[i]);
 	printf("%d\n", sum);
 	return (0);
