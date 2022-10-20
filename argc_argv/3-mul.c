@@ -1,24 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  *main - program that multiplies two number
  *@argc:integer
  *@argv:character
- *Return: 1 if the program does not reeceive two argument
+ *Return: 1 if the program does not receive two argument
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	char *operation;
-	int num1, num2;
+	int i, sum = 0;
 
-	operation = argv[1];
-	num1 = atoi(argv[2]);
-	num2 = atoi(argv[3]);
-
-	if (strcmp(operation, "add") == 0)
+	if(argc != 3)
 	{
-		printf("%d\n", num1 + num2);
+		printf("Error");
+	exit (1);
 	}
-	return (1);
+	for (i = 1; i < argc; i++)
+		sum = sum * atoi(argv[i]);
+	printf("%d", sum);
+	return (0);
 }
