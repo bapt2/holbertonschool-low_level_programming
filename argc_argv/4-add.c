@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		{
-			printf("Error\n");
-			exit(1);
+			printf("0\n");
 		}
 	    for (i = 0; i < argc - 1; i++)
 		    sum = sum + atoi(argv[i]);
