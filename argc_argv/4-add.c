@@ -4,8 +4,18 @@
  *main - program that multiplies two number
  *@argc:integer
  *@argv:character
+ *@c:integer
 *Return: 1 if the program does not receive two argument
  */
+int _isdigit(int c)
+{
+	if ((c >= 33 && c <= 47) && (c >= 58 && c <= 124))
+	{
+		printf("Error\n");
+		return (1);
+	}
+	return (0);
+}
 int main(int argc, char *argv[])
 {
 	int i, sum = 0;
