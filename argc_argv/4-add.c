@@ -11,12 +11,12 @@ int main(int argc, char *argv[])
 	int i, sum = 0;
 
 	if (argc != 3)
-		{
-			printf("0\n");
-			return (0);
-		}
-	    for (i = 0; i < argc - 1; i++)
-		    sum = sum + atoi(argv[i]);
-		printf("%d\n", sum);
-		return (0);
-		}
+	{
+		printf("0\n");
+		exit(1);
+	}
+
+	for (i = 1; i < argc; i++)
+		sum = sum + atoi(argv[i]);
+	printf("%d", sum);
+}
