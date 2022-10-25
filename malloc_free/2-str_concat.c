@@ -28,8 +28,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (p == NULL)
 			return (NULL);
-		p[j] = s2[j];
-		j++;
+		p[i] = s2[j];
+		i++;
 	}
 	return (p);
 }
