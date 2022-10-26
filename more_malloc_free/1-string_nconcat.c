@@ -5,30 +5,36 @@
  *@s1:character
  *@s2:character
  *@n:unsigned integer
- *Return:
+ *Return: NULL if the function fail
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int i;
+	char *ar;
+	unsigned int i, j, k;
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = 0;
+	else
+	{
+		for (i = 0; s1[i]; i++)
+			;
+	}
 	if (s2 == NULL)
-		s2 = "";
-	p = malloc(sizeof(s1) + sizeof(s2) - 4);
-	for (i = 0; s1[i] != '\0'; i++)
+		s2 = 0;
+	else
 	{
-		if (p == NULL)
-			return (NULL);
-		p[i] = s1[i];
+		for (j = 0; s2[j]; j++)
+			;
 	}
-	for (n = 0; s2[n] != '\0'; n++)
-	{
-		if (p == NULL)
-			return (NULL);
-		p[i] = s2[n];
-		i++;
-	}
-	return (p);
+	if (j > n)
+		j = n;
+	ar = malloc((i + j + 1) * sizeof(char));
+	if (ar == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		ar[k] = s1[k];
+	for (k = 0; k < j; k++)
+		ar[k + i] = s2[k];
+	ar[i + j] = '\0';
+	return (ar);
 }
