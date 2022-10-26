@@ -8,7 +8,12 @@
 void *malloc_checked(unsigned int b)
 {
 	int  *p;
+	unsigned i;
 
-	p = malloc(sizeof(b));
+	p = malloc(sizeof(i) * b);
+	for (i = 0; i < b; i++)
+	{
+		p[i] = b;
+	}
 	return (p);
 }
