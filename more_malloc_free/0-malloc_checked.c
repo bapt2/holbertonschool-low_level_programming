@@ -9,6 +9,6 @@ void *malloc_checked(unsigned int b)
 {
 	int  *p;
 
-	p = malloc(sizeof(b) * 2);
+	p = malloc(sizeof(b));
 	return (p);
 }
