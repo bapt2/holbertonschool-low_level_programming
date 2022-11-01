@@ -9,10 +9,17 @@
 int _strlen(char *s)
 {
 	int c = 0;
+
 	while (s[c] != '\0')
 		c++;
 	return (c);
 }
+/**
+ *_strcpy -  copies the string pointed to by src, including the terminating
+ *@dest: variable destination
+ *@src:variable copy
+ *Return: dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -40,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	n_dog = malloc(sizeof(dog_t));
 	if (n_dog == NULL)
 	{
-		free (n_dog);
+		free(n_dog);
 		return (NULL);
 	}
 	n_dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
