@@ -1,6 +1,4 @@
 #include "function_pointers.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  *int_index - function that searches for an integer
  *@array:array of the function
@@ -12,14 +10,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	if (array == NULL || size == '\0' || cmp == NULL)
 		return (-1);
-	cmp(array[size]);
-	if (array[size] <= 0)
+
+	for (i = 0; i < size; ++i)
 	{
-		return (-1);
+		if (cmp(array[i]))
+			return (i);
 	}
-	if (array[size] >= 0)
-	{
-		return (size - 1);
-	}
-	return (cmp(array[size]));
+	return (-1);
 }
