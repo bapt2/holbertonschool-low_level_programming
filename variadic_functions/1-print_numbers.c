@@ -7,9 +7,9 @@
  *@n: unsigned int
  *Return: 0
  */
-(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	if (separator == NULL)
 		return (NULL);
-	return (0);
+	return;
 }
