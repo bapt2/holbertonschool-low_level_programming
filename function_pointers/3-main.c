@@ -1,7 +1,8 @@
 #include "3-calc.h"
 /**
- *get_op_func
- *@s:
+ *main -calculate
+ *@argc: integer
+ *@argv:character
  *Return: result
  */
 int main(int argc, char *argv[])
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (98);
 	}
-	if (s == NULL)
+	if (s == NULL || num[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit (99);
