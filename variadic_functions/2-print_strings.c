@@ -18,13 +18,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	{
 		printf("%s", s = va_arg(args, char*));
+		if (s[j] != '\0' && j != n - 1)
+		{
+			printf("%s", separator);
+		}
 		if (s[j] == '\0' || n == '\0')
 		{
 			printf("(nil)");
-		}
-	        if (s[j] != '\0' && j != n - 1)
-		{
-			printf("%s", separator);
 		}
 	}
 	printf("\n");
