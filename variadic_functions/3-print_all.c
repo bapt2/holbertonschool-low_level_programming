@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  *print_char - print char
- *@a: a
+ *@x: x
  *Return:
 */
 void print_char(va_list x)
@@ -57,7 +57,7 @@ void print_all(const char * const format, ...)
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string},
-		{NULL , NULL}
+		{NULL, NULL}
 	};
 	int k = 0;
 	int l = 0;
