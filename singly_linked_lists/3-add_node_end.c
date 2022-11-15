@@ -28,7 +28,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		newl++;
 	newn->str = news;
 	newn->len = newl;
-	newn->next = *head;
-	*head = newn;
+	newn->next = NULL;
+	if (!*head)
+		*head = newn;
+	while (newn != NULL)
+		newn = newn->next;
+	newn->next = newn;
 	return (newn);
 }
