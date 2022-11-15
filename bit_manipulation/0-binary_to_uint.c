@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - function that converts a binary number to an unsigned int
  * @b: str
- * return: the converted number
+ * Return: the converted number
 */
 unsigned int binary_to_uint(const char *b)
 {
@@ -12,13 +12,18 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 	{
-		return(0);
+		return (0);
 	}
-	while (b[y] == '0' || b[y] == '1')
+	else if (b[y] == '0' || b[y] == '1')
 	{
-		x <<= 1;
-		x += b[y] - '0';
-		y++;
+		while (b[y] == '0' || b[y] == '1')
+		{
+			x <<= 1;
+			x += b[y] - '0';
+			y++;
+		}
+		return (x);
 	}
-	return (x);
+	else
+		return (0);
 }
