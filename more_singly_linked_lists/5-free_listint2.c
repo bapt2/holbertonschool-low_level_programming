@@ -4,7 +4,7 @@
  * @head: str
  * Return: free list
  */
-void free_listin2t(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *tempn;
 
