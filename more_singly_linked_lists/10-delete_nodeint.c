@@ -2,7 +2,7 @@
 /**
  * delete_nodeint_at_index - function that deletes a specifique node of a list
  * @head: head o the list
- * @index
+ * @index: node to delete
  * Return: 0 if the linked list is empty else the head node's data
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -29,8 +29,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			return (-1);
 		tempn = tempn->next;
 	}
+	tempn = del->next;
 	del->next = tempn->next;
-	tempn->next = del;
 	free(tempn);
 	return (1);
 }
