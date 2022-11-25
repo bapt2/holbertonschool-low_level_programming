@@ -13,12 +13,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (!key || !ht)
 	    return (0);
-	index = key_index((const unsigned char *)key, ht->size);
+	i = key_index((const unsigned char *)key, ht->size);
 	n = ht->array[i];
 	while (n && strcmp(n->key, key) != 0)
 		n = n->next;
 	if (!n)
 		return (0);
-	esle
+	else
 		return (n->value);
 }
