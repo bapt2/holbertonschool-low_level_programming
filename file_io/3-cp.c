@@ -25,15 +25,15 @@ void close_fd(int fd)
 int main(int argc, char *argv[])
 {
 	int file_to, file_from, r, w;
-	char * buf;
+	char *buf;
 
-	if(argc != 3)
+	if (argc != 3)
 		{
 			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 			exit(97);
 		}
+	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_CREAT, O_TRUNC, O_WRONLY, 0664);
 	buf = malloc(sizeof(char) * 1024);
 	if (!buf)
 	{
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	}
 	while (r > 0)
 	{
-		w = write(STDOUT_FILENO, buf, r);
+		w = write(file_to, buf, r);
 		if (w == -1 || file_to == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		r = read(file_from, buf, 1024);
-		file_to = open(argv[2], O_WRONLY, O_APPEND);
+		file_to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 	free(buf);
 	close_fd(file_from);
